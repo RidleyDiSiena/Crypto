@@ -1,0 +1,9 @@
+FedTAM for OS-X v.0.1 - 1-15-2014 - Ridley DiSiena
+FPKI CA Chain and Revocation Dependency Analysis on OS X
+
+FeFedTAM.keychain : Good always: 55 CA path validations, all to the US Federal Common Policy Root
+FedTAM_bad_OCSP_request.keychain : Good only if OCSP is off / Fail if OCSP is on :  8 CAs with bad OCSP request
+FedTAM_bad_OCSP_server_response.keychain : Good only if OCSP is off / Fail if OCSP is on: 30 DoD CAs with bad OCSP server response
+FedTAM_Untrusted_CRL.keychain : Fail: 9 CAs with certificate cannot be verified (it specifies an untrusted CRL)
+FedTAM_Unknown_Critical_Extension.keychain : Fail: 15 CAs with unrecognized critical extensions
+FedTAM_Unknown_Critical_Extension_Downstream.keychain : Fail: 5 CAs invalid due to being downstream to one of the 15 CAs with unrecognized critical extensions
